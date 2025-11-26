@@ -13,15 +13,18 @@ What’s inside
 
 Install requirements
 ---------------------
+```
 pip install -r requirements.txt
+```
 
 Prefetch dataset  (Takes time to prefetch data and store locally)
 -------------------------------------------------------------------------------
+```
 python -m continual_vqa.cli.prefetch \
   --languages "English" "German" "Spanish" "Portuguese" "Russian" "Ukrainian" "Hindi" "Bengali" "Amharic" "Japanese" "Chinese (Simplified)" "Emirati Arabic" \
   --image-cache cache/images \
-  --hf-cache cache/hf \
-  --seed 42
+  --hf-cache cache/hf 
+```
 
 Train commands
 --------------
